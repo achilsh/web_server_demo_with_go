@@ -1,0 +1,7 @@
+go 1.21.3
+
+use (
+	./gin_demo
+	./go_zero_demo
+	./grpc_demo
+)
