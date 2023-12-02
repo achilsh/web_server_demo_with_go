@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Helloworld;
+
+option go_package = "./proto;Helloworld";
+
+service Shenzhen {
+  rpc Call(SZReq) returns (SZRsp) {}
+}
+
+message SZReq {
+  string name = 1;
+}
+
+message SZRsp {
+  string msg = 1;
+}

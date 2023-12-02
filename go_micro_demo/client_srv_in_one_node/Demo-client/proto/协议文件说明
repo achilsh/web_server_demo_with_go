@@ -1,0 +1,4 @@
+1. 该文件夹主要是存放 协议文件proto 及生成的源码
+2. 需要什么服务，就可以定义相应的proto文件，里面包括对应的rpc接口和req/response 结构体。
+
+3. 该client 可以和service 封开饭
