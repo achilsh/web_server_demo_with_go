@@ -1,0 +1,3 @@
+该目录主要是 业务对各个rpc接口的实现，自定义一些业务，
+需要手动去实现 proto 中定义的rpc接口。
+比如通过 go-micro 生成模板 Helloworld.go ， 也自定手动编写了 Shenzhen.go文件。
