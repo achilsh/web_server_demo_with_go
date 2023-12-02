@@ -1,0 +1,5 @@
+1. 该目录主要是用于创建 以grpc方式通信的services.
+2. 对服务端和client， 我默认还是使用脚手架工具来创建模板，然后做些定制，比如新增接口，新增rpc service等。
+3. 这里既有服务端的实现，也有client的调用，他们都是基于grpc通信方式。
+4. 利用postman 可以调用，格式如下： grpc://localhost:35921  service_name /rpc_interface 这些都是在proto文件中定义，当然可以直接load proto文件。
+

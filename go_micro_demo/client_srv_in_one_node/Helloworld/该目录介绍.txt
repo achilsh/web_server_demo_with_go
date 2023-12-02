@@ -1,3 +1,4 @@
 1. 服务端也可以使用 go-micro方式来创建模版，比如： go-micro new service  server_name 这样就可以创建 server_name的服务名。
 2. 也可以生成通过grpc通信的server, go-micro new service  --grpc  server_name  这样就可以创建通过grpc方式通信的服务。
 3. 当然在生成的模板中，可以自己自定义修改，或者新增 proto 文件，里面定义一些新的服务，然后实现各个rpc接口，然后把实际的接口注册进去。
+4. 既有服务端的实现，也包含客户端的调用。

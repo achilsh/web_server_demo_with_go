@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package GrpcDemoSrv;
+
+option go_package = "./proto;GrpcDemoSrv";
+
+service GrpcDemo2Srv {
+  rpc Grpc2Call(Demo2Req) returns (Demo2Resp) {}
+}
+
+message Demo2Req {
+  string name = 1;
+}
+
+message Demo2Resp {
+  string msg = 1;
+}

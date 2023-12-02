@@ -5,6 +5,7 @@ use (
 	./go_micro_demo
 	./go_micro_demo/client_srv_in_one_node/Demo-client
 	./go_micro_demo/client_srv_in_one_node/Helloworld
+	./go_micro_demo/client_srv_in_one_node/grpc_micro/GrpcDemoSrv
 	./go_zero_demo
 	./grpc_demo
 )
