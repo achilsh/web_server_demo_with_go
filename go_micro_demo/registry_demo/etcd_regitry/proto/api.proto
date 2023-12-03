@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package backend;
+
+option go_package = "./proto;backend";
+
+service Api {
+  rpc PName(PNReq) returns (PNRsp) {}
+}
+
+message PNReq {
+  string name = 1;
+}
+
+message PNRsp {
+  string msg = 1;
+}

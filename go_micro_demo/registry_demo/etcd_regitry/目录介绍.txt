@@ -1,0 +1,23 @@
+1. z主要介绍通过etcd做微服务间的注册中心。
+2. 整体步骤： a） 启动 etcd集群， b) 创建 go-micro服务集群， c)在微服务间集成 etcd 接口 d)通过客户端来请求。
+3. 通过模板创建一个 api 服务。go-micro new service api 
+4. 通过模板创建一个 backend 服务. go-micro new service backend 
+5. 在每个服务器main.go中设置 etcd注册。
+
+7. 运行个服务： go run backend/main.go   
+               go run api/main.go
+               或者运行 make build 生成二进制文件
+
+
+8. 使用工具来测试，比如 postman 或者其他的curl 
+
+9. api 目录编译成的代码即可用http 方式，比如如下： 
+curl -XPOST \
+     -H 'Content-Type: application/json' \
+     -H 'Micro-Endpoint: Api.PName' \
+     -d '{"name": "alice"}' \
+      http://localhost:8080
+
+10. api 目录编译成的代码也可通过 grpc方式访问。
+
+11. micro_http_api 提供单纯的http 服务，可以和gin等其他http server 做集成。

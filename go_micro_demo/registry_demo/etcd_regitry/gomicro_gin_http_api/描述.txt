@@ -1,0 +1,4 @@
+1. 通过 go-micro 实现 http web server的能力
+2. 一种方式通过gin 来实现
+3. 可以直接访问 micro_http_api服务，该服务内部访问 go-mirco的服务集群。
+4. 其实可参考 go-micro的实例：  https://github.com/go-micro/examples.git 中的  examples/http  目录实例。

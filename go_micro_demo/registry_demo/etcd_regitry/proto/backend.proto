@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package backend;
+
+option go_package = "./proto;backend";
+
+service Backend {
+  rpc RetName(BkReq) returns (BkResp) {}
+}
+
+message BkReq {
+  string name = 1;
+}
+
+message BkResp {
+  string msg = 1;
+}
