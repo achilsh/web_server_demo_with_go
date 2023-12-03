@@ -22,6 +22,7 @@ build:
 	@go build -o bin/api_bin api/main.go
 	@go build -o bin/backend_bin backend/main.go
 	@go build -o bin/gomicro_gin_http_api gomicro_gin_http_api/main.go
+	@go build -o bin/gomicro_web_http_api /gomicro_web_http/main.go
 
 .PHONY: test
 test:
